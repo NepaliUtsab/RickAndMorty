@@ -75,7 +75,6 @@ public class MainActivity extends AppCompatActivity implements CharacterClickNav
             binding.tvErrorConnection.setText(Constants.NO_INTERNET_CONNECTION);
         }
     }
-
     /*
     * Initializing the UI components
     * */
