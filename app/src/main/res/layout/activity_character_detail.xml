@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="characterModel"
+            type="com.example.ricknmorty.models.CharacterModel" />
+    </data>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.CharacterDetailFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <RelativeLayout
+            android:id="@+id/rlToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:id="@+id/tvCharacterName"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:padding="@dimen/padding_10"
+                android:maxLines="1"
+                android:layout_marginRight="@dimen/margin_5"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/title_text"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"/>
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_10"
+                android:layout_margin="@dimen/padding_10"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_close_button"
+                android:backgroundTint="@color/colorAccent"
+                android:backgroundTintMode="src_atop"/>
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/ivCharaterImage"
+            android:layout_width="@dimen/character_image_size"
+            android:layout_height="@dimen/character_image_size"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rlToolBar"
+            android:layout_margin="@dimen/margin_5"/>
+
+        <TextView
+            android:id="@+id/tvCharacterStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlToolBar"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_toRightOf="@+id/ivCharaterImage"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/title_text" />
+
+        <TextView
+            android:id="@+id/tvCharacterSpecies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCharacterStatus"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_toRightOf="@+id/ivCharaterImage"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/title_text" />
+
+        <TextView
+            android:id="@+id/tvCharacterType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCharacterSpecies"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_toRightOf="@+id/ivCharaterImage"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/title_text" />
+
+        <TextView
+            android:id="@+id/tvCharacterGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCharacterType"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_toRightOf="@+id/ivCharaterImage"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/title_text" />
+
+        <TextView
+            android:id="@+id/tvCharacterOrigin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivCharaterImage"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/title_text" />
+
+        <TextView
+            android:id="@+id/tvCharacterLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCharacterOrigin"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/title_text" />
+
+
+
+    </RelativeLayout>
+</layout>
